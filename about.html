@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>About</title>
+</head>
+<body>
+    <a href="#main-content" class="skip">Skip to main content</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+            <span><a href="index.html">Fangyi ;)</a></span>
+                <li class="push-right"><a href="about.html">About</a></li>
+                <li class="projects-nav">
+                    <a href="portfolio.html">Projects</a>
+                    <details class="projects-menu">
+                        <summary aria-label="Open projects menu" class="projects-toggle">
+                            &#9776;
+                        </summary>
+                        <ul class="projects-dropdown">
+                            <li><a href="portfolio.html#design-jam">Tech + Innovation Design Jam</a></li>
+                            <li><a href="portfolio.html#afb">Alternative Fall Break</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="Fangyi_Li_resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="about-page" id="main-content">
+        <section class="about-section">
+            <h1>About Me</h1>
+            <img src="images/headshot.jpg" alt="Fangyi Li Headshot" class="about-headshot">
+            <section class="about-bio">
+                <p>Hello! I'm Fangyi, a UX Designer and Researcher with a passion for creating user-centered solutions. With a background in Psychology and Data Science, I bring a unique perspective to my design process, focusing on data-driven insights to enhance user experiences.</p>
+                <p>My journey into UX design began with a fascination for understanding human behavior and how technology can be designed to meet users' needs effectively. Over the years, I've honed my skills in user research, wireframing, prototyping, and usability testing.</p>
+                <p>When I'm not designing, you can find me exploring new technologies, reading about the latest trends in UX, or enjoying outdoor activities. I'm always eager to connect with like-minded professionals and collaborate on exciting projects.</p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/fali-fangyi/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn Icon" class="socials-icon">
+                </a>
+                <a href="https://medium.com/@fali-fangyi" target="_blank" rel="noopener" aria-label="Medium" class="medium-link">
+                    <img src="images/medium.svg" alt="Medium Icon" class="socials-icon medium-icon">
+                </a>
+                <a href="https://github.com/fangyi2002" target="_blank" rel="noopener" aria-label="GitHub">
+                    <img src="images/github.svg" alt="GitHub Icon" class="socials-icon">
+                </a>
+            </div>
+            <div class="footer-contact">
+                <a href="mailto:fali2002lfy@gmail.com">fali2002lfy@gmail.com</a>
+                <span class="footer-separator">•</span>
+                <span>734-678-3145</span>
+            </div>
+            <p class="footer-copyright">&copy; <span id="copyright-year"></span> Fangyi Li. All rights reserved.</p>
+        </div>
+    </footer>
+    <canvas id="snow-canvas" aria-hidden="true"></canvas>
+    <script src="js/snow.js" defer></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
