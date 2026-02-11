@@ -11,7 +11,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <ul class="nav-menu">
-            <span><a href="index.html">Fangyi ;)</a></span>
+            <span><a href="index.html">Fangyi <span class="wink-smiley">:)</span></a></span>
                 <li class="push-right"><a href="about.html">About</a></li>
                 <li class="projects-nav">
                     <a href="portfolio.html">Projects</a>
@@ -22,49 +22,53 @@
                         <ul class="projects-dropdown">
                             <li><a href="portfolio.html#design-jam">Tech + Innovation Design Jam</a></li>
                             <li><a href="portfolio.html#afb">Alternative Fall Break</a></li>
+                            <li><a href="portfolio.html#alumni-dashboard">Alumni Engagement Dashboard</a></li>
                         </ul>
                     </details>
                 </li>
                 <li><a href="Fangyi_Li_resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+                <li><button id="snow-toggle-btn" class="snow-toggle-btn" aria-label="Toggle snow effect">❄️</button></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Slider Navigation -->
-    <nav class="section-slider" id="section-slider">
-        <div class="slider-track" id="slider-track">
-            <div class="slider-indicator" id="slider-indicator"></div>
-        </div>
-        <div class="slider-title-display" id="slider-title-display">
-            <span class="slider-title-text" id="slider-title-text">Overview</span>
-        </div>
-        <ul class="slider-sections" id="slider-sections">
-            <li><a href="#overview" data-section="overview" data-title="Overview">Overview</a></li>
-            <li><a href="#my-role" data-section="my-role" data-title="My Role">My Role</a></li>
-            <li><a href="#ideation" data-section="ideation" data-title="Ideation">Ideation</a></li>
-            <li><a href="#user-research" data-section="user-research" data-title="User Research">User Research</a></li>
-            <li><a href="#prototyping" data-section="prototyping" data-title="Prototyping">Prototyping</a></li>
-            <li><a href="#feedback" data-section="feedback" data-title="Feedback">Feedback</a></li>
-            <li><a href="#outcome" data-section="outcome" data-title="Outcome & Impact">Outcome & Impact</a></li>
-        </ul>
-    </nav>
-
-    <main id="main-content">
+    <main class="project-content" id="main-content">
         <section class="header">
-            <h1> Tech + Innovation Design Jam</h1>
-            <h2> A.D.H.Do</h2>
+            <h1> A.D.H.Do</h1>
+            <h2 class="project-tags"> UI/UX Designer • Design Jam Project </h2>
             <p> Neurodivergent-focused productivity app that provides therapeutic support for neurodivergent individuals.</p>
         </section>
 
         <section class="project-description">
-            <h2 id="overview"> Overview</h2>
-            <p> During a 6-week Tech + Innovation Design Jam, our team collaborated to create A.D.H.Do, a productivity app tailored for neurodivergent individuals. The app aims to enhance focus and organization through customizable features and therapeutic support.</p>
-            <h2 id="my-role"> My Role</h2>
-            <h2 id="ideation"> Ideation</h2>
-            <h2 id="user-research"> User research</h2>
-            <h2 id="prototyping"> Prototyping</h2>
-            <h2 id="feedback"> Feedback</h2>
-            <h2 id="outcome"> Outcome & Impact</h2>
+            <div class="project-section">
+                <h2 id="overview"> Overview</h2>
+                <p> A.D.H.Do is a conceptual productivity app designed for people with ADHD. Our goal was to reframe time management as a therapeutic, flexible, and user-affirming experience by addressing executive-function challenges that traditional task apps often overlook. Through research, iterative prototyping, and feedback from industry mentors, we developed a product vision grounded in behavioral insight and neurodiversity-centered design.
+                </p>
+            </div>
+            <div class="project-section">
+                <h2 id="my-role"> My Role</h2>
+                <p>As the UI/UX Designer, I: <br>
+                    • Led early feature ideation grounded in survey insights <br>
+                    • Created sketches and progressively refined low-, mid-, and high-fidelity wireframes<br>
+                    • Collaborated with the PM and teammates to align on requirements<br>
+                    • Integrated feedback from industry experts to strengthen usability and UX rationale<br>
+                    • Designed the pitch deck that communicated the product vision to judges and mentors<br>
+                    </p>
+            </div>
+            <div class="project-section">
+                <h2> Problem </h2>
+                <p>Traditional task apps often overlook the unique challenges faced by neurodivergent individuals in managing time and tasks. These apps often assume a linear, top-down approach to time management, which can be difficult for people with ADHD who struggle with executive function and attention regulation. </p>
+            </div>
+            <div class="project-section">
+                <h2> Task </h2>
+                <p>Create a time-management experience tailored to ADHD users by lowering cognitive load, providing compassionate guidance, and supporting flexible task engagement.</p>
+            </div>
+            
+            <div class="project-section">
+                <h2 id="outcome"> Outcome & Impact</h2>
+                <p>We presented A.D.H.Do to the Design Jam committee, where the concept received positive feedback for its sensitive approach to neurodiversity and its clear translation of behavioral insights into practical, compassionate features. Industry mentors encouraged further exploration of the idea, and our team is considering next steps with external mentorship and early-stage product development.
+                </p>
+            </div>
         </section>
     </main>
     <footer>

@@ -8,7 +8,6 @@
 </head>
 <body>
     <a href="#main-content" class="skip">Skip to main content</a>
-    <a href="#main-content" class="skip">Skip to main content</a>
     <nav class="navbar">
         <div class="nav-container">
             <ul class="nav-menu">
@@ -23,18 +22,20 @@
                         <ul class="projects-dropdown">
                             <li><a href="portfolio.html#design-jam">Tech + Innovation Design Jam</a></li>
                             <li><a href="portfolio.html#afb">Alternative Fall Break</a></li>
+                            <li><a href="portfolio.html#alumni-dashboard">Alumni Engagement Dashboard</a></li>
                         </ul>
                     </details>
                 </li>
                 <li><a href="Fangyi_Li_resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+                <li><button id="snow-toggle-btn" class="snow-toggle-btn" aria-label="Toggle snow effect">❄️</button></li>
             </ul>
         </div>
     </nav>
 
     <main id="main-content">
         <section class="hero-section">
-            <h1>My Portfolio</h1>
-            <p>Selected projects showcasing my UX design and research work</p>
+            <h1>My Projects</h1>
+            <!-- <p>Selected projects showcasing my UX design and research work</p> -->
             <div class="design-projects">
                 <div class="project-card" id="design-jam">
                     <img src="images/design-jam-thumbnail.jpg" alt="Design Jam Project Thumbnail" class="project-thumbnail">
@@ -56,7 +57,19 @@
                         <span class="keyword">Heuristic evaluation</span>
                         <span class="keyword">Client work</span>
                     </div>
-                    <a href="#" class="btn btn-link">View Case Study →</a>
+                    <a href="afb.html" class="btn btn-link">View Case Study →</a>
+                </div>
+
+                <div class="project-card" id="alumni-dashboard"> 
+                    <img src="images/dashboard-thumbnail.png" alt="Alumni Engagement Dashboard Thumbnail" class="project-thumbnail">
+                    <h2>Alumni Engagement Dashboard</h2>
+                    <p>Data visualization and analysis project for alumni engagement tracking.</p>
+                    <div class="keywords-section">
+                        <span class="keyword">Data Visualization</span>
+                        <span class="keyword">Data Analysis</span>
+                    </div>
+                    <a href="alumni-dashboard.html" class="btn btn-link">View Case Study →</a>
+                </div>
             </div>
         </section>
 
