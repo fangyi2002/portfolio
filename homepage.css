@@ -1,0 +1,47 @@
+/* Homepage frame 30:6: static layout; original thought-bubble assets required. */
+.figma-home{background:#fff;color:#013a63}
+.figma-home>.wrap{max-width:1280px;padding:0 40px 0 61px}
+.figma-home header{padding:16px 0 0;height:66px;align-items:flex-start}
+.figma-home header .brand{font:700 40px/normal 'Gaegu',cursive;color:#013a63}
+.figma-home header nav{width:364.609px;justify-content:space-between;gap:0;font:400 24px/normal 'Gaegu',cursive;padding-top:10px}
+.figma-home header nav a,.figma-home header nav span[aria-disabled=true]{color:#4a6fa5}
+.figma-home #about{position:relative;padding:227px 0 0;min-height:766px}
+.figma-home #about h1{position:relative;z-index:1;font:700 64px/70px 'Lato',sans-serif;letter-spacing:0;max-width:1022px;margin:0 0 29px}
+.figma-home #about .intro{position:relative;z-index:1;font:400 24px/45px 'Lato',sans-serif;max-width:1022px;margin:0 0 72px;color:#013a63}
+.figma-home #about .muted{font:400 24px/normal 'Gaegu',cursive;color:#4f6d7a;max-width:1022px;margin:0}
+.thought-main{position:absolute;top:-1px;right:46px;width:368px;height:368px;object-fit:cover;pointer-events:none}
+.thought-word{position:relative;display:inline-block;font-family:'Gaegu',cursive;min-width:58px;text-align:center}
+.thought-word img{position:absolute;width:92px;height:92px;max-width:none;left:50%;top:50%;transform:translate(-50%,-50%) scaleX(-1);opacity:.8;object-fit:cover;pointer-events:none}
+.thought-word span{position:relative;z-index:1}
+@media(max-width:1000px){.figma-home>.wrap{padding:0 32px}.figma-home #about h1{font-size:54px;line-height:1.1}.thought-main{right:0;width:290px;height:290px}.figma-home #about{padding-top:215px}.figma-home #about .intro{font-size:22px}}
+@media(max-width:600px){.figma-home>.wrap{padding:0 24px}.figma-home header .brand{font-size:34px}.figma-home header nav{width:auto;gap:15px;font-size:21px}.figma-home #about{padding-top:200px;min-height:760px}.thought-main{top:10px;width:210px;height:210px;right:0}.figma-home #about h1{font-size:42px;line-height:1.15;margin-bottom:28px}.figma-home #about .intro{font-size:20px;line-height:1.8;margin-bottom:44px}.figma-home #about .muted{font-size:23px}}
+
+/* Give the opening question a lighter visual footprint. */
+#about .intro .thought-word img{width:76px;height:76px}
+
+/* The hit area stays still while its contents stretch with the pointer. */
+button.thought-main{display:block;padding:0;border:0;background:none;pointer-events:auto;cursor:pointer;z-index:2;border-radius:45%;-webkit-tap-highlight-color:transparent}
+.thought-main:focus-visible{outline:2px solid #4a6fa5;outline-offset:4px}
+.thought-deform{position:absolute;inset:0;display:block;pointer-events:none}
+.thought-shell{transform-origin:51% 45%;will-change:transform;display:block;width:100%;height:100%;pointer-events:none}
+.thought-images{position:absolute;left:27%;top:20%;width:49%;height:49%;display:block;pointer-events:none}
+.thought-image{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;transition:opacity 1500ms ease;user-select:none}
+.thought-image.is-visible{opacity:1}
+@media(prefers-reduced-motion:reduce){.thought-image{transition:none}.thought-shell{transform:none!important}}
+
+/* Split the original artwork into a moving cloud and a stationary tail. */
+.thought-shell{clip-path:polygon(0 0,100% 0,100% 65%,74% 65%,64% 77%,64% 100%,0 100%)}
+.thought-dots{position:absolute;inset:0;display:block;width:100%;height:100%;pointer-events:none;clip-path:polygon(100% 65%,74% 65%,64% 77%,64% 100%,100% 100%)}
+
+.thought-shell{transition:opacity 450ms ease}
+.thought-main.is-brushed .thought-shell{opacity:.7}
+@media(prefers-reduced-motion:reduce){.thought-shell{transition:none}}
+
+/* Keep only the cloud shapes behind both questions. */
+#about .intro .thought-word img{clip-path:polygon(0 0,100% 0,100% 65%,74% 65%,64% 77%,64% 100%,0 100%)}
+
+/* Let the final introduction sit near the bottom of the landing viewport. */
+.figma-home #about{display:flex;flex-direction:column;min-height:calc(100vh - 66px);min-height:calc(100svh - 66px);padding-bottom:32px}
+.figma-home #about h1,.figma-home #about .intro,.figma-home #about .muted{flex-shrink:0}
+.figma-home #about .intro{margin-bottom:32px}
+.figma-home #about .muted{margin-top:auto}
