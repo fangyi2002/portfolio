@@ -15,9 +15,9 @@ The site loads Lato and Gaegu from Google Fonts; offline it uses fallback fonts.
 | Introduction, selected work, contact section | dist/index.html |
 | Case-study story, findings, sidebar and image placeholders | dist/cutgroup.html |
 | Header/footer on both pages | Edit the header/footer markup in both HTML files; they are separate copies. |
-| Shared typography, palette and case-study layout | dist/style.css |
-| Homepage layout, responsive sizes and visual effects | dist/homepage.css |
-| Image rotation, hover response and reduced-motion behavior | dist/bubble.js |
+| Shared typography, palette and case-study layout | dist/css/style.css |
+| Homepage layout, responsive sizes and visual effects | dist/css/homepage.css |
+| Image rotation, hover response and reduced-motion behavior | dist/js/bubble.js |
 | Resume | Replace dist/assets/Fangyi-Li-Resume.pdf with the same filename, or change its href in both headers. |
 | Bubble and illustrations | dist/assets/ (transparent PNG files) |
 
